@@ -8,8 +8,6 @@ def conv_bn(inp, oup, stride):
         nn.BatchNorm2d(oup),
         nn.ReLU()    #nn.ReLU6(inplace=True) 
     )
-def myfunc():
-    pass
 
 def conv_1x1_bn(inp, oup):
     return nn.Sequential(
